@@ -9,8 +9,8 @@ CACHE_FILE = os.path.join(DATA_DIR, "intent_cache.pkl")
 # Provider: "openai" or "google"
 LLM_PROVIDER = "google" 
 
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "sk-proj-...")
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "AIzaSyCdlfDcRHqp1RSSXC-xUjBbDpQmqF2PPFs")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "")
 
 # Model Name (e.g., "gpt-4o-mini", "gemini-1.5-flash", "gemini-2.0-flash-exp")
 MODEL_NAME = "gemini-2.5-flash" # User requested 2.5, arguably 2.0-flash-exp or 1.5-flash. Using 2.0-exp as latest.
@@ -36,3 +36,4 @@ BANDIT_EXPLORATION = 0.1 # nu
 # --- Graph / Candidate Discovery ---
 NEAR_DISTANCE_THRESHOLD_KM = 10.0
 MAX_HOPS = 3
+
